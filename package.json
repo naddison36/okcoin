@@ -1,0 +1,25 @@
+{
+    "name": "okcoin",
+    "version": "0.0.1",
+    "description": "Node.js API wrapper to the OKCoin bitcoin exchange",
+    "main": "index.js",
+    "dependencies": {
+        "request": "~2.54.0",
+        "underscore": "~1.8.2",
+        "crypto": "~0.0.3",
+        "verror": "~1.6.0",
+        "MD5": "~1.2.1"
+    },
+    "keywords": [
+        "OKCoin",
+        "api",
+        "exchange",
+        "bitcoin"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/naddison36/okcoin"
+    },
+    "author": "Nick Addison",
+    "license": "MIT"
+}
