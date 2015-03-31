@@ -10,6 +10,11 @@ Please contact support@okcoin.com if you are having trouble opening and account 
 
 `npm install okcoin`
 
+### Design Principles
+- **thin** the client is just a simple wrapper to the OKCoin API. There is no parameter validation as this is delegated to the OKCoin API server. Similarly, there is no data transformation.
+- **errors** all errors are returned as detailed Error objects which can be used programatically or for support
+- **no retries** it's up to the calling program to handle retries as it'll vary between programs. For example, error handling timeouts on mutable API calls like addTrade and cancelOrder is not as simple as retying the API call as the operation my have been successful on the exchange but the response back was not.
+
 ### Error handling
 The first parameter to each API function is a callback function which is passed error and data objects.
 
