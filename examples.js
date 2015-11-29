@@ -39,7 +39,7 @@ var privateClient = new OKCoin(key, secret);
 
 // market orders
 // market buy of 25 USD
-privateClient.addTrade(logResponse, 'btc_usd', 'buy_market', null, '2.5');
+//privateClient.addTrade(logResponse, 'btc_usd', 'buy_market', null, '2.5');
 // market sell of 0.01 BTC
 //privateClient.addTrade(logResponse, 'btc_usd', 'sell_market', '0.01');
 
@@ -52,7 +52,7 @@ privateClient.addTrade(logResponse, 'btc_usd', 'buy_market', null, '2.5');
 // get all open orders
 //privateClient.getOrdersInfo(logResponse, 'btc_usd', 0, '31947122,31941934');
 // get all filled orders
-//privateClient.getOrdersInfo(logResponse, 'btc_usd', 1, '31947122,31941934');
+privateClient.getOrdersInfo(logResponse, 'btc_usd', 0, '31947122,31941934');
 
 // get the first 20 unfilled orders
 //privateClient.getOrderHistory(logResponse, 'btc_usd', 0, 1, 20);

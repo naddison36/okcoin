@@ -1,11 +1,11 @@
 {
     "name": "okcoin",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Node.js API wrapper to the OKCoin bitcoin exchange",
     "main": "index.js",
     "dependencies": {
-        "request": "~2.54.0",
-        "underscore": "~1.8.2",
+        "request": "~2.64.0",
+        "underscore": "~1.8.3",
         "crypto": "~0.0.3",
         "verror": "~1.6.0",
         "MD5": "~1.2.1"
