@@ -290,6 +290,13 @@ OKCoin.prototype.getAccountRecords = function getAccountRecords(callback, symbol
     }, callback);
 };
 
+OKCoin.prototype.getTradeHistory = function getTradeHistory(callback, symbol, since)
+{
+    this.privateRequest('trade_history', {
+        symbol: symbol,
+        since: since
+    }, callback);
+};
 
 OKCoin.prototype.getOrderHistory = function getOrderHistory(callback, symbol, status, current_page, page_length)
 {

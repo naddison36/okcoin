@@ -68,6 +68,9 @@ privateClient.getOrdersInfo(logResponse, 'btc_usd', 0, '31947122,31941934');
 // get the first 5 account withdrawals
 //privateClient.getAccountRecords(logResponse, 'btc_usd', 1, 1, 5);
 
+// get historical trades
+//privateClient.getTradeHistory(logResponse, 'btc_usd', 1);
+
 function logResponse(err, data)
 {
     if (err)
